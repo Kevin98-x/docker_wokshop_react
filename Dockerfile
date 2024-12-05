@@ -6,7 +6,6 @@ COPY package.json package.json
 
 RUN npm install
 
-COPY .  .
+COPY . .
 
-RUN npm run build
-CMD ["npx", "serve", "-s", "build"]
+CMD ["npm", "start"]
